@@ -1,0 +1,92 @@
+ /* ----------------Navbar--------------- */
+#top-nav{
+    background-color: #daac00;
+    padding: 0 8%;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+#serchbox {
+    background-color: rgb(218, 172, 0);
+    color: white;
+    border: 0px;
+    border-radius: 0px;
+    position: relative;
+    left: 46px;
+    box-shadow: rgb(109 105 105 / 34%) 5px 10px 9px 0px;
+}
+#serchbox::placeholder{
+    color: white;
+    font-size: 16px;
+}
+#searchbtn{
+    position:relative;
+    z-index: 99;
+    background-color: #00bec9;
+    color: white;
+    border: 0;
+    border-radius: 0;
+}
+@media only screen and (max-width: 770px) {
+    #serachform{
+        padding-bottom: 20px;
+        margin-top: 30px;
+        position: relative;
+        left: -30px;
+    }
+    #textbox h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .img-fluid{
+        width: 180px;
+    }
+    #top-nav{
+    
+        padding: 0;
+    }
+    #textbox{
+        margin-top: 10px;  
+        }
+}
+
+/* page1 */
+
+/* textarea */
+
+#banner{
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+#btn{
+    border: 1px solid white !important;
+    color: white;
+    margin-left: 30px;
+}
+#textbox{
+margin-top: 100px;  
+}
+#textbox h1{
+    font-size: 50px;
+}
+#textbox p{
+   color: white;
+   font-size: 20px;
+}
+ /* services section  */
+ #servicestext{
+     padding-top: 10%;
+     padding-bottom: 5%;
+ }
+ #servicesimg{
+ padding: 5%;
+ }
+ @media only screen and (max-width: 500px) {
+    #servicesimg{
+        padding-top: 10%;
+        }
+}

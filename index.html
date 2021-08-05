@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<style>
+     /* ----------------Navbar--------------- */
+#top-nav{
+    background-color: #daac00;
+    padding: 0 8%;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+#serchbox {
+    background-color: rgb(218, 172, 0);
+    color: white;
+    border: 0px;
+    border-radius: 0px;
+    position: relative;
+    left: 46px;
+    box-shadow: rgb(109 105 105 / 34%) 5px 10px 9px 0px;
+}
+#serchbox::placeholder{
+    color: white;
+    font-size: 16px;
+}
+#searchbtn{
+    position:relative;
+    z-index: 99;
+    background-color: #00bec9;
+    color: white;
+    border: 0;
+    border-radius: 0;
+}
+@media only screen and (max-width: 770px) {
+    #serachform{
+        padding-bottom: 20px;
+        margin-top: 30px;
+        position: relative;
+        left: -30px;
+    }
+    #textbox h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .img-fluid{
+        width: 180px;
+    }
+    #top-nav{
+    
+        padding: 0;
+    }
+    #textbox{
+        margin-top: 10px;  
+        }
+}
+
+/* page1 */
+
+/* textarea */
+
+#banner{
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+#btn{
+    border: 1px solid white !important;
+    color: white;
+    margin-left: 30px;
+}
+#textbox{
+margin-top: 100px;  
+}
+#textbox h1{
+    font-size: 50px;
+}
+#textbox p{
+   color: white;
+   font-size: 20px;
+}
+
+
+</style>
+    <title>Bootstrap Project 2</title>
+</head>
+
+<body>
+    <!------ Navbar --------->
+    <header>
+        <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg  navbar-dark " id="top-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img
+                        src="https://logos.textgiraffe.com/logos/logo-name/25160031-designstyle-grunge-l.png"
+                        class="img-fluid" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" id="serachform">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            id="serchbox">
+                        <button class="btn btn-outline-success" type="submit" id="searchbtn"><i
+                                class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav> </div>
+    </header>
+
+    <!---------------------- container -------------------------------->
+
+    <div class="container-fluid " id="container" >
+<div class="row bg-warning justify-content-center" id="banner">
+    <!-- silde text bar -->
+    <div class="col-md-6 " id="textbox">
+ <h1 class="text-white"> First I Wanted To Be a Vaterinarian</h1> <br>
+ <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae voluptate expedita tenetur deserunt architecto magnam exercitationem repellat dolor atque!</p>
+
+<button type="button" class="btn btn-primary">contact us </button><span>
+    <button type="button" class="btn btn-outline-warning"  id="btn" >Our Service</button>
+</span>
+
+    </div>
+    <!-- side image bar  -->
+    <div class="col-md-4 mt-5" id="imgbox">
+        <img src="https://www.pngall.com/wp-content/uploads/5/Black-Dog-PNG-Clipart.png" class="img-fluid" width="250px
+        " alt="">
+    </div>
+
+</div>
+
+<!----------------- services --------------->
+<div class="row justify-content-center">
+    <div class="col-md-5" id="servicestext" >
+        <h1> As an Vaterinarian and <br> lover of animal </h1> <br>
+<p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores rem dolorem fuga enim, nulla fugit facere sequi obcaecati expedita hic!</p>
+<button type="button" class="btn btn-warning text-white">Our services</button>
+    </div>
+    <div class="col-md-5" id="servicesimg">
+<img src="https://images.unsplash.com/photo-1601758260944-72f34e1b8d57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="img-fluid" alt="">
+    </div>
+    <!-- services row div end -->
+</div>
+
+        <!------------------------------ container end ------------------------------->
+    </div>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html> 
